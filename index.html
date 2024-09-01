@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shubham Kokate | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        body {
+            scroll-behavior: smooth;
+        }
+        #experience-details, #project-details, #extra-curricular-details, #publications-details, #contact-details, #about-details, #skills-details {
+            display: none;
+        }
+    </style>
+</head>
+
+<body onload="document.body.style.opacity='1'">
+    <div class="hero">
+        <div class="nav">
+            <div class="logo">
+                <h2>Shubham Kokate</h2>
+            </div>
+            <div class="link">
+                <ul>
+                    <li><a href="#about" onclick="toggleAbout()">About</a></li>
+                    <li><a href="#experience" onclick="toggleExperience()">Experience</a></li>
+                    <li><a href="#projects" onclick="toggleProjects()">Projects</a></li>
+                    <li><a href="#skills" onclick="toggleSkills()">Skills</a></li>
+                    <li><a href="#extra-curricular" onclick="toggleExtraCurricular()">Extra-Curricular</a></li>
+                    <li><a href="#publications" onclick="togglePublications()">Publications</a></li>
+                    <li><a href="#contact" onclick="toggleContact()">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="main">
+            <!-- Removed the image tag -->
+            <div class="main-detail">
+                <p>Hello I'm</p>
+                <h1>Shubham Kokate</h1>
+                <h4>Software Developer</h4>
+                <div class="btn">
+                    <a href="https://drive.google.com/file/d/1CsF2yyNnFERmtAb7qFM2OzcTZss96-qI/view?usp=sharing" target="_blank">
+                        <button type="button">Download CV</button>
+                    </a>
+                    
+                </div>
+                <div class="social">
+                    <a href="https://github.com/sk174/" target="_blank">
+                        <i class='bx bxl-github'></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/shubham-kokate-549004256" target="_blank">
+                        <i class='bx bxl-linkedin'></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="about">
+        
+        <div id="about-details">
+            <p>I'm a Full Stack Developer with a background in Computer Science and Engineering. I have experience in web development, including frontend and backend technologies, and have worked on various projects involving blockchain technology and Java.</p>
+        </div>
+    </section>
+
+    <section id="experience">
+        
+        <div id="experience-details">
+            <h3>Webakruti Solutions</h3>
+            <p><strong>Intern</strong> (March 2024 – April 2024)</p>
+            <ul>
+                <li>Participated in a one-month learning internship focused on web development.</li>
+                <li>Developed and enhanced web pages using HTML and CSS.</li>
+                <li>Gained practical experience in creating responsive and user-friendly interfaces.</li>
+                <li>Collaborated with a team to implement design ideas and improve website aesthetics.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects">
+       
+        <div id="project-details">
+            <h3>Distributed Storage System with Blockchain Technology</h3>
+            <p>A project to design and implement a distributed storage system using blockchain technology. The system ensures secure, decentralized, and reliable data storage by connecting to a peer-to-peer network.</p>
+
+            <h3>Car Rental System</h3>
+            <p>Developed a Core Java application for car rentals using Array Lists for data management. Features include user authentication, booking management, and admin controls. Implemented object-oriented principles for modular design.</p>
+        </div>
+    </section>
+
+    <section id="skills">
+       
+        <div id="skills-details">
+            <ul>
+                <li><strong>Programming:</strong> C, Java, SQL</li>
+                <li><strong>Development:</strong> HTML, CSS, Bootstrap</li>
+                <li><strong>Subjects Known:</strong> DBMS, OOPs</li>
+                <li><strong>Database:</strong> MySQL</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="extra-curricular">
+        
+        <div id="extra-curricular-details">
+            <ul>
+                <li>Actively participate in university-level cricket team.</li>
+                <li>Worked with an NGO organization.</li>
+                <li>Actively participated in events organized by NSS.</li>
+                <li>Participated in inter-college coding competitions.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="publications">
+       
+        <div id="publications-details">
+            <p>Published a research paper titled ‘Decentralized Cloud Storage System Using Blockchain’ in the International Journal For Science And Advance Research In Technology, Issue 12 March 2024.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+       
+        <div id="contact-details">
+            <p>Email: <a href="mailto:shubhamkokate174@gmail.com">shubhamkokate174@gmail.com</a></p>
+            <p>Phone: 8600021773</p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/shubham-kokate-549004256">linkedin.com/in/shubham-kokate-549004256</a></p>
+        </div>
+    </section>
+
+    <script>
+        function toggleExperience() {
+            var details = document.getElementById('experience-details');
+            if (details.style.display === 'none' || details.style.display === '') {
+                details.style.display = 'block';
+                document.getElementById('experience').scrollIntoView({ behavior: 'smooth' });
+            } else {
+                details.style.display = 'none';
+            }
+        }
+
+        function toggleProjects() {
+            var details = document.getElementById('project-details');
+            if (details.style.display === 'none' || details.style.display === '') {
+                details.style.display = 'block';
+                document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });
+            } else {
+                details.style.display = 'none';
+            }
+        }
+
+        function toggleSkills() {
+            var details = document.getElementById('skills-details');
+            if (details.style.display === 'none' || details.style.display === '') {
+                details.style.display = 'block';
+                document.getElementById('skills').scrollIntoView({ behavior: 'smooth' });
+            } else {
+                details.style.display = 'none';
+            }
+        }
+
+        function toggleExtraCurricular() {
+            var details = document.getElementById('extra-curricular-details');
+            if (details.style.display === 'none' || details.style.display === '') {
+                details.style.display = 'block';
+                document.getElementById('extra-curricular').scrollIntoView({ behavior: 'smooth' });
+            } else {
+                details.style.display = 'none';
+            }
+        }
+
+        function togglePublications() {
+            var details = document.getElementById('publications-details');
+            if (details.style.display === 'none' || details.style.display === '') {
+                details.style.display = 'block';
+                document.getElementById('publications').scrollIntoView({ behavior: 'smooth' });
+            } else {
+                details.style.display = 'none';
+            }
+        }
+
+        function toggleContact() {
+            var details = document.getElementById('contact-details');
+            if (details.style.display === 'none' || details.style.display === '') {
+                details.style.display = 'block';
+                document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+            } else {
+                details.style.display = 'none';
+            }
+        }
+
+        function toggleAbout() {
+            var details = document.getElementById('about-details');
+            if (details.style.display === 'none' || details.style.display === '') {
+                details.style.display = 'block';
+                document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
+            } else {
+                details.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+
+</html>
